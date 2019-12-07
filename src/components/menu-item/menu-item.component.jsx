@@ -2,7 +2,6 @@ import React from 'react';
 import {withRouter} from 'react-router-dom';
 
 import './menu-item.styles.scss';
-import { from } from 'rxjs';
 
 const MenuItem = ({title,imageurl,size,history,linkurl,match}) => (
     <div className={`${size} menu-item`} onClick={() => history.push(`${match.url}${linkurl}`)}>
